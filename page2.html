@@ -2,15 +2,17 @@
 <html> 
 	<head lang="en">
 	    <meta charset="UTF-8">
-	    <link rel="stylesheet" type="text/css" href="Style.css" title="style" /> 
+	    <link rel="stylesheet" type="text/css" href="Style.css" title="style" /> <!--~~~~ Reference to style sheet ~~~~-->
 	    <title>Choose Recipe</title>
 	</head>
 	<body>
 	    <div id=headerBar>
-			<img src="static/RecipeRush.png" class ="logo" alt="RecipeRushLogo">
+			<img src="static/RecipeRush.png" class ="logo" alt="RecipeRushLogo"> <!--~~~~~~~~~~~ Logo ~~~~~~~~~~~-->
 		</div>
 	    <div id="PageContainer">
 		    <div id="Book">
+		    	<!--~~~~~~~~~~~ Book showing available recipes to pick  - three per page ~~~~~~~~~~~-->
+		    	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Left page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		    	<ul id="LeftPage2">
 			    	<li id="RecipeSelection">
 			      		<a href=page3.html>
@@ -76,6 +78,7 @@
 			      		</a>
 			 	   	</li>
 			    </ul>
+			    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Right Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			    <ul id="RightPage2">
 			    	<li id="RecipeSelection">
 			      		<a href=page3.html>
@@ -143,11 +146,13 @@
 			    </ul>
 			    <div class="clr"></div>
 		    </div>
+		    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Button to move forward to next set of recipes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		    <div id=ForwarBookButton>
 		    	<a href="page2.html">
 					<img src="http://www.clker.com/cliparts/I/Q/b/J/k/U/black-arrow-hi.png" alt="Arrow Right"></img>
 				</a>
 		    </div>
+		    <!--~~~~~~~~~~~~~~~~~~~ Button to move back to home page to select more ingredients~~~~~~~~~~~~~~~~~~~ -->
 		    <div id=Page2BackPageButtons>
 		    	<a href="index.html">
 					<img src="static/ArrowLeft.png" alt="Go Back!">
