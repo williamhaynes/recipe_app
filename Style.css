@@ -1,8 +1,10 @@
+/*Body containing backgroud colour and the font*/
 body {
     background-color: #595873;
-    font-family: 'Signika', sans-serif; 			/*Backgroud colour*/
+    font-family: 'Signika', sans-serif; 
 }
 
+/*The container holding the positioning of the website*/
 #PageContainer{
     background-color: #595873;
     display: inline-block;
@@ -20,14 +22,14 @@ body {
     overflow: none;
     background-size: 1280px 760px;
 }
-
+/*The Book image holding the different recipes found*/
 #Book{
     /*New Book Margin*/
     width: 684px;
     margin: 167px 0px 0px 291px;
 
 }
-
+/*The left page of the book*/
 #LeftPage2{
     width:340px;
     margin-top: 0px;
@@ -38,7 +40,7 @@ body {
     /*margin-left: 23vw;
     margin-top: 12vw;*/
 }
-
+/*The right page of the book*/
 #RightPage2{
     width:343px;
     margin-top: 0px;
@@ -47,14 +49,14 @@ body {
     /*margin-left: 2vw;
     margin-top: 12vw;*/
 }
-
+/*The left page of the book*/
 #LeftPage3{
     width:318px;
     padding-right:0px;
     float: left;
     margin:10px;
 }
-
+/*The right page of the book*/
 #RightPage3{
     padding-top: 0px;
     width:325px;
@@ -98,7 +100,7 @@ li a:hover {
     width:315px;
     text-align: left;
 }
-
+/*The list of ingredients already owned*/
 #IngredientsAlready{
     height: 144px;
     padding-left:5px;
@@ -107,6 +109,7 @@ li a:hover {
     outline: 1px solid black;
 	background-color: #ccffcc;
 }
+/*The list of ingredients */
 #IngredientsNeeded{
     height: 144px;
     padding-left:5px;
