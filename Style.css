@@ -444,6 +444,10 @@ input[type="search"]{
 	-webkit-border-radius:15px;
 }
 
+.ingredientsHeaderText{
+	font-size: 150%;
+}
+
 .findRecipeText{
 	padding-top: 15px;
 }
