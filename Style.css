@@ -349,6 +349,7 @@ input[type="search"]{
 	left: 339px;
 	background-color: hsla(0,100%, 100%, 0.5);
 	text-align: center;
+	font-size: 150%;
 }
 
 /*Central Box containing left and right arrows*/
@@ -444,9 +445,6 @@ input[type="search"]{
 	-webkit-border-radius:15px;
 }
 
-.ingredientsHeaderText{
-	font-size: 150%;
-}
 
 .findRecipeText{
 	padding-top: 15px;
