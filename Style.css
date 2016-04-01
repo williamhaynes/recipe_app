@@ -65,14 +65,14 @@ body {
     margin: 18px 0px 0px 14px;
     outline: 1px solid black;
 }
-
+/*Unordered List*/
 ul {
     list-style-type: none;
     padding: 0px;
     height: 436px;
     margin:0px;
 }
-
+/*The Recipe selection*/
 #RecipeSelection{
     text-align: left;
     height: 144px;
@@ -81,7 +81,7 @@ ul {
     outline: 3px solid black;
 }
 
-
+/*Ordered List*/
 li a {
     display: block;
     color: black;
@@ -119,15 +119,15 @@ li a:hover {
 	background-color:#ffcccc;
 }
 
-
+/*List of ingredients already owned - ones typed in*/
 .IngredientsAlready{
     text-align: center;
 }
-
+/*Ingredients missing*/
 .IngredientsNeeded{
     text-align: center;
 }
-
+/*Store to nearest ingredients missing*/
 #store{
     padding-left:5px;
     padding-right:5px;
@@ -138,7 +138,7 @@ li a:hover {
     margin-top:10px;
     text-align: center;
 }
-
+/*Map of nearest store*/
 #map{
     padding-left:5px;
     padding-right:5px;
@@ -158,14 +158,14 @@ li a:hover {
 	width:140px;
 	height:100px;
 }
-
+/*Cooking info*/
 #cookinfo{
 	text-align:center;
     height: 230px;
     padding-top: 10px;
     float:left;
 }
-
+/*Image of the food used as example*/
 .FoodPic img{
     margin-top: 0px;
     float:left;
@@ -173,7 +173,7 @@ li a:hover {
     height: 145px;
     margin-right: 10px;
 }
-
+/*Title of recipe food*/
 .FoodTitle {
     margin-left: 2px;
     margin-right: 2px;
@@ -185,7 +185,7 @@ li a:hover {
     clear:both;
     font-size:0;
 }
-
+/*Image of back button*/
 #BackPageButtons img{
     padding: 0px;
     margin-top: -70px;
@@ -209,14 +209,14 @@ h6{
     width:337px;
     padding-right: 0px;
 }
-
+/*Font size and positioning of ingredients*/
 .IngredientsMissing{
     margin-top: -18px;
     font-size: 14px;
     text-align: center;
 }
 
-
+/*Recipe positioning and font*/
 .FoodRecipe{
     position: relative;
     margin-top: -10px;
@@ -232,7 +232,7 @@ h6{
     color:#4d94ff; 
 }
 
-
+/*Cooking time positioning and font*/
 .FoodCookingTime{
     float:right;
     font-size: 12px;
@@ -242,7 +242,7 @@ h6{
     margin-right: 7px;
     height:23px;
 }
-
+/*Forward button image*/
 #ForwarBookButton img{
     position: absolute;
     padding: 0px;
@@ -267,7 +267,7 @@ h6{
     width: 60px;
     height: auto;
 }
-
+/*Header bar positioning and font*/
 #headerBar{
 	position: fixed;
 	z-index: 100;
@@ -283,7 +283,7 @@ h6{
 	-webkit-border-radius:15px;
 	box-shadow: 3px 3px 5px black;
 }
-
+/*Logo*/
 .logo{
 	height: 120px;
 	width: 180px;
@@ -362,7 +362,7 @@ input[type="search"]{
 	padding-top: 82px;
 	/*background-color: blue;*/
 }
-
+/*Add pepper - to add ingredients to the list*/
 #addPepper{
 	background-image: url(static/GreenTWo.png);
 	background-repeat: no-repeat;
@@ -376,7 +376,7 @@ input[type="search"]{
 	background-image: url(static/Green.png);
 	cursor: crosshair;
 }
-
+/*Remove pepper - to remove ingredients to the list*/
 #removePepper{
 	background-image: url(static/RedTwo.png);
 	background-repeat: no-repeat;
@@ -391,7 +391,7 @@ input[type="search"]{
 	background-image: url(static/Red.png);
 	cursor: crosshair;
 }
-
+/*Clear pepper - to clear the ingredients*/
 #clearPepper{
 	background-image: url(static/YellowTwo.png);
 	background-repeat: no-repeat;
@@ -406,7 +406,7 @@ input[type="search"]{
 	background-image: url(static/Yellow.png);
 	cursor: crosshair;
 }
-
+/*Positioning of the help box*/
 #helpBox{
 	position: absolute;
 	top: 625px;
@@ -422,7 +422,7 @@ input[type="search"]{
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
 }
-
+/*Button to find recipes based on ingredients added*/
 #findRecipes{
 	/*AJ Added code*/
 	color: black;
