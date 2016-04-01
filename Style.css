@@ -289,6 +289,9 @@ h6{
 	width: 180px;
 }
 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Home Page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Author: William Haynes*/
 /*The page excluding the BLACKGROUND*/
 #choppingBoard{
     background-color: #595873;
@@ -452,6 +455,10 @@ input[type="search"]{
 	border-radius: 15px;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
+}
+
+.findRecipesText{
+	font-size: 150%;
 }
 
 h3{
