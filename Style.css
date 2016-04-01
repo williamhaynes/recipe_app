@@ -439,9 +439,9 @@ input[type="search"]{
 #findRecipes{
 	/*AJ Added code*/
 	color: black;
-    font-weight: bold;
-    text-decoration: none;
-	
+	font-weight: bold;
+    	text-decoration: none;
+	font-size: 150%;	
 	position: absolute;
 	top: 615px;
 	left: 758px;
@@ -455,10 +455,6 @@ input[type="search"]{
 	border-radius: 15px;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
-}
-
-.findRecipeText{
-	font-size: 150%;
 }
 
 h3{
