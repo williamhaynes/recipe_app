@@ -444,6 +444,9 @@ input[type="search"]{
 	-webkit-border-radius:15px;
 }
 
+.findRecipeText{
+	padding-top: 10px;
+}
 h3{
 padding: 11px;
 margin: 0px;
