@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<title>Recipe Rush</title>
 		
-		<!--Style-->
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		<link rel="stylesheet" type="text/css" href="Style.css" title="style" />
 		<link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 	    
-		<!--Javascript-->
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="homePage.js"></script>
 	</head>
@@ -16,18 +16,20 @@
 		<div id=headerBar>
 			<img src="static/RecipeRush.png" class ="logo" alt="RecipeRushLogo">
 		</div>
+		<!--~~~~~~~~~~~~~~~~~~~ The chopping board that holds all the ingredients and the buttons ~~~~~~~~~~~~~~~~~~~-->
 		<div id=choppingBoard>
 			<div id=searchBar>
+				<!--~~~~~~~~~ The search bar that you use to search ingredients ~~~~~~~~~-->
 				<input type="search" id=searchBox name="search" maxlength="20" placeholder="Type Ingredient Here"/>
 			</div>
 			<div id=iAdded>
 				<h3 class=ingredientsHeaderText>My Ingredients</h3>
-				<!-- Going to use a list here as example data -->
+				<!--~~~~~~~~~~~~~~~~~~~ Going to use a list here as example data ~~~~~~~~~~~~~~~~~~~-->
 				<ul>
 
 				</ul>
 			</div>
-
+			<!-- ~~~~~~~~~ Three peppers acting as an 'add' buuton, 'remove' button and a 'clear' button ~~~~~~~~~-->
 			<div id=addPepper>
 
 			</div>
@@ -37,13 +39,15 @@
 			<div id=clearPepper>
 				
 			</div>
+			<!--~~~~~~~~~~~~~~~~~~~ Help box to show you how to work the ingredient search ~~~~~~~~~~~~~~~~~~~-->
 			<div id=helpBox>
 				<p>1. Type in your ingredient</p>
-				<p>2. Select "Add", to create your recipe list (Up To 9)</p>
+				<p>2. Select "Add", to create your recipe list (Up To 9)</p> <!-- Three help points -->
 				<p>3. Find a recipe from your ingredients</p>
 			</div>
 			
 			<a href=page2.html>
+				<!--~~~~~~~~~ Button to find recipes which will take you to the next page - 'page2' ~~~~~~~~~-->
 				<div id=findRecipes>
 					<p class=findRecipeText>Find Recipes</p>
 				</div>
