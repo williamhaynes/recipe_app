@@ -454,9 +454,9 @@ padding: 11px;
 margin: 0px;
 }
 
-#dropDown{
+/*#dropDown{
     visibility: hidden;
-}
+}*/
 /* Autocomplete js functions dropdown box controls */
 .ingredientsList{
     text-decoration: none;
