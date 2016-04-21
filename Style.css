@@ -453,3 +453,17 @@ h3{
 padding: 11px;
 margin: 0px;
 }
+
+/* Autocomplete js functions dropdown box controls */
+#dropDown{
+    text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background-color: #005555;
+    display:block;
+}
+
+#dropDown:hover{
+    color: white;
+    background-color: #5FD367;
+}
