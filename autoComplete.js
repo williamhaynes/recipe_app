@@ -25,11 +25,27 @@ $(function(){
 function autocompleteIngredients(grabbedText){
     //call API
     //build url for request
+
+    $.ajax({
+        url: 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText, // The URL to the API. You can get this in the API page of the API you intend to consume
+        type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
+        data: {}, // Additional parameters here
+        dataType: 'json',
+        success: function(data) { console.dir((data.source)); },
+        error: function(err) { alert(err); },
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("X-Mashape-Authorization", "e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX"); // Enter here your Mashape key
+        }
+    });
+
+
+    /*
+
     var url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText + '/e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX/';
     $.getJSON(url, function(jsondata){
         //handle results
         autocompleteText(jsondata);
-    });
+    });*/
 }
 /*
  * This part of the function returns and populates the drop down list on the search box
