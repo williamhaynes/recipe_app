@@ -38,7 +38,7 @@ function autocompleteIngredients(grabbedText){
         }
     });
 
-
+    autocompleteText(json);
     /*
 
     var url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText + '/e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX/';
