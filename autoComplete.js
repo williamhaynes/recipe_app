@@ -38,7 +38,9 @@ function autocompleteIngredients(grabbedText){
         }
     });
 
-    autocompleteText(ingredientsAutoCompleted.data);
+    $.getJSON(ingredientsAutoCompleted, function(jsondata){
+        autocompleteText(jsondata);
+    });
     /*
 
     var url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText + '/e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX/';
@@ -56,8 +58,10 @@ function autocompleteText(jsondata){
     var i = 0;
 
     while(counter<10){ //limits list to first 10 results
-        var ingredients = jsondata;
+        var ingredients = jsondata.Search[i].name;
         autoText += "<li>"+ ingredients +"</li>" + "<br>";
+        counter++;
+        i++;
     }
-    $("#dropDown").html(htmlstring);
+    $("#dropDown").html(autoText);
 }
