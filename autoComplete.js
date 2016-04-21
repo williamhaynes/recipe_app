@@ -37,7 +37,7 @@ function autocompleteIngredients(grabbedText){
             var i = 0;
 
             while(counter<10){ //limits list to first 10 results
-                var ingredients = jsondata.Search[i].name;
+                var ingredients = data[i].name;
                 autoText += "<li>"+ ingredients +"</li>" + "<br>";
                 counter++;
                 i++;
