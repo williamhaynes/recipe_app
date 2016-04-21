@@ -10,7 +10,8 @@
  */
 $(function(){
     $('#searchBox').keydown(function() {
-        var htmlstring = "<li>Look some text</li>";
+        var htmlstring = "";
+        htmlstring += "<li>Look some text</li>";
         $("#dropDown").html(htmlstring);
     });
 });
