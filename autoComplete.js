@@ -11,7 +11,7 @@
 $(function(){
     $('#searchBox').addEventListener("keypress", function () {
         var searchterm = $("#searchBox");
-        $('li#1').text(searchterm);
+        $('#dropDown').html(searchterm);
         //call autocomplete function
         autocompleteIngredients(searchterm);
         return false;
