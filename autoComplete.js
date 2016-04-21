@@ -13,6 +13,9 @@ $(function(){
     $('#searchBox').keyup(function() {
         var grabbedText = $('#searchBox').val();
         $('#dropDown').show();
+        $("#addPepper").hide();
+        $("#removePepper").hide();
+        $("#clearPepper").hide();
         autocompleteIngredients(grabbedText);
         /*htmlstring += "<li>"+grabbedText+"</li>";
         $("#dropDown").html(htmlstring);*/
@@ -44,9 +47,7 @@ function autocompleteIngredients(grabbedText){
                 i++;
             }
             $("#dropDown").html(autoText);
-            $("#addPepper").hide();
-            $("#removePepper").hide();
-            $("#clearPepper").hide();
+
 
         },
         error: function(err) { alert(err); },
