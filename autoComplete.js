@@ -9,7 +9,7 @@
  * It's purpose is to make it easier for users who can select from a list as they type.
  */
 $(function(){
-    $('#searchBox').submit(function () {
+    $('#searchBox').onclick(function () {
         var searchterm = $("#searchBox").val();
         //call autocomplete function
         autocompleteIngredients(searchterm);
