@@ -14,6 +14,7 @@ $(function(){
         var grabbedText = ('#searchBox').text;
         htmlstring += "<li>"+grabbedText+"</li>";
         $("#dropDown").html(htmlstring);
+        //comment
     });
 });
 
