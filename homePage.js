@@ -25,7 +25,7 @@ $(function(){
 			$("#dropDown").hide();
 		}
 	});
-	$('#searchBox, .dropDownli').mouseout(function(){
+	$('#dropDownTextArea').mouseout(function(){
 			$('#dropDown').hide();
 		}
 	)
