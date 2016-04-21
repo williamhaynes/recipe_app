@@ -12,19 +12,20 @@ $(function(){
     var htmlstring = "";
     $('#searchBox').keydown(function() {
         var grabbedText = $('#searchBox').val();
-        htmlstring += "<li>"+grabbedText+"</li>";
-        $("#dropDown").html(htmlstring);
+        autocompleteIngredients(grabbedText);
+        /*htmlstring += "<li>"+grabbedText+"</li>";
+        $("#dropDown").html(htmlstring);*/
         //comment
     });
 });
 
 /*
  *This part of the function actually calls the json data
-
-function autocompleteIngredients(searchterm){
+*/
+function autocompleteIngredients(grabbedText){
     //call API
     //build url for request
-    var url = "'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + searchterm + '-H 'X-Mashape-Key: e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX'";
+    var url = "'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText + '-H 'X-Mashape-Key: e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX'";
     $.getJSON(url, function(jsondata){
         //handle results
         autocompleteText(jsondata);
@@ -32,14 +33,15 @@ function autocompleteIngredients(searchterm){
 }
 /*
  * This part of the function returns and populates the drop down list on the search box
-
+*/
 function autocompleteText(jsondata){
-
+    var autoText = "";
     var counter = 0;
     var i = 0;
 
     while(counter<10){ //limits list to first 10 results
-
-        $('li#' + [i]).text(jsondata.Search[i]);
+        var ingredients = jsondata.Search[i].name;
+        autoText += "<li>"+ ingredients +"</li>" + "<br>";
     }
-}*/
+    $("#dropDown").html(htmlstring);
+}
