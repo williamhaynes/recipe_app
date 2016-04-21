@@ -31,16 +31,24 @@ function autocompleteIngredients(grabbedText){
         type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
         data: {}, // Additional parameters here
         dataType: 'json',
-        success: function(data) { console.dir((data.source)); },
+        success: function(data) { console.dir((data.source));
+            var autoText = "";
+            var counter = 0;
+            var i = 0;
+
+            while(counter<10){ //limits list to first 10 results
+                var ingredients = jsondata.Search[i].name;
+                autoText += "<li>"+ ingredients +"</li>" + "<br>";
+                counter++;
+                i++;
+            }
+            $("#dropDown").html(autoText);},
         error: function(err) { alert(err); },
         beforeSend: function(xhr) {
             xhr.setRequestHeader("X-Mashape-Authorization", "e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX"); // Enter here your Mashape key
         }
     });
 
-    $.getJSON(ingredientsAutoCompleted, function(jsondata){
-        autocompleteText(jsondata);
-    });
     /*
 
     var url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText + '/e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX/';
@@ -51,7 +59,7 @@ function autocompleteIngredients(grabbedText){
 }
 /*
  * This part of the function returns and populates the drop down list on the search box
-*/
+*//*
 function autocompleteText(jsondata){
     var autoText = "";
     var counter = 0;
@@ -64,4 +72,4 @@ function autocompleteText(jsondata){
         i++;
     }
     $("#dropDown").html(autoText);
-}
+}*/
