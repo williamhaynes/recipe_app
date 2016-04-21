@@ -13,9 +13,6 @@ $(function(){
     $('#searchBox').keyup(function() {
         var grabbedText = $('#searchBox').val();
         $('#dropDown').show();
-        $("#addPepper").hide();
-        $("#removePepper").hide();
-        $("#clearPepper").hide();
         autocompleteIngredients(grabbedText);
         /*htmlstring += "<li>"+grabbedText+"</li>";
         $("#dropDown").html(htmlstring);*/
