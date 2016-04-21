@@ -10,17 +10,17 @@
  */
 $(function(){
     $('#searchBox').addEventListener("keypress", function () {
-        var searchterm = $("#searchBox");
+        var searchterm = "ojgflkjfgslgkflkjgfsdlkjfgdslkmsgfdlgfmnklfdsgkmnfsgdnmlgf";//$("#searchBox");
         $('#dropDown').html(searchterm);
         //call autocomplete function
-        autocompleteIngredients(searchterm);
-        return false;
+        //autocompleteIngredients(searchterm);
+        //return false;
     });
 });
 
 /*
  *This part of the function actually calls the json data
- */
+
 function autocompleteIngredients(searchterm){
     //call API
     //build url for request
@@ -32,7 +32,7 @@ function autocompleteIngredients(searchterm){
 }
 /*
  * This part of the function returns and populates the drop down list on the search box
- */
+
 function autocompleteText(jsondata){
 
     var counter = 0;
@@ -42,4 +42,4 @@ function autocompleteText(jsondata){
 
         $('li#' + [i]).text(jsondata.Search[i]);
     }
-}
+}*/
