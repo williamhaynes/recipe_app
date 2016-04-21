@@ -38,7 +38,7 @@ function autocompleteIngredients(grabbedText){
 
             while(counter<10){ //limits list to first 10 results
                 var ingredients = data[i].name;
-                autoText += "<li>"+ ingredients +"</li>" + "<br>";
+                autoText += "<li class='dropDownli'>"+ ingredients +"</li>" + "<br>";
                 counter++;
                 i++;
             }
