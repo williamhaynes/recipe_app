@@ -12,7 +12,7 @@ $(function(){
     var htmlstring = "";
     $('#searchBox').keyup(function() {
         var grabbedText = $('#searchBox').val();
-        $('#searchBox').show();
+        $('#dropDown').show();
         autocompleteIngredients(grabbedText);
         /*htmlstring += "<li>"+grabbedText+"</li>";
         $("#dropDown").html(htmlstring);*/
