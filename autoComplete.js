@@ -56,7 +56,7 @@ function autocompleteText(jsondata){
     var i = 0;
 
     while(counter<10){ //limits list to first 10 results
-        var ingredients = jsondata.Search[i].name;
+        var ingredients = jsondata;
         autoText += "<li>"+ ingredients +"</li>" + "<br>";
     }
     $("#dropDown").html(htmlstring);
