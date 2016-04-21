@@ -9,8 +9,9 @@
  * It's purpose is to make it easier for users who can select from a list as they type.
  */
 $(function(){
+    var htmlstring = "";
     $('#searchBox').keydown(function() {
-        var htmlstring = "";
+
         htmlstring += "<li>Look some text</li>";
         $("#dropDown").html(htmlstring);
     });
