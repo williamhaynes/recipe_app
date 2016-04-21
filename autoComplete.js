@@ -34,12 +34,11 @@ function autocompleteIngredients(searchterm){
  */
 function autocompleteText(jsondata){
 
-    var htmlstring = "";
     var counter = 0;
     var i = 0;
 
     while(counter<10){ //limits list to first 10 results
 
-        htmlstring +="<option value=\"" +[i]+ "\">" + jsondata.Search[i] + "</option>" + "<br>";
+        $('li#' + [i]).text(jsondata.Search[i]);
     }
 }
