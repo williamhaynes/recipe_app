@@ -12,7 +12,7 @@ $(function(){
     var htmlstring = "";
     $('#searchBox').keydown(function() {
         var grabbedText = ('#searchBox').val;
-        htmlstring += "<li>Look some text</li>";
+        htmlstring += "<li>"+grabbedText+"</li>";
         $("#dropDown").html(htmlstring);
     });
 });
