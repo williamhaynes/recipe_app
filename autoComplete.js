@@ -25,8 +25,7 @@ $(function(){
 function autocompleteIngredients(grabbedText){
     //call API
     //build url for request
-
-    var url = "'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query='" + grabbedText + "'-H 'X-Mashape-Key: e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX'";
+    var url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText + '/e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX/';
     $.getJSON(url, function(jsondata){
         //handle results
         autocompleteText(jsondata);
