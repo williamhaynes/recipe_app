@@ -25,7 +25,7 @@ $(function(){
 			$("#dropDown").hide();
 		}
 	});
-	$('.dropDownli', '#searchBox').mouseout(function () {
+	$('#dropDown', '#searchBox').mouseout(function () {
 		$("#dropDown").hide();
 	});
 });
