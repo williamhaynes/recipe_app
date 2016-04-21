@@ -22,6 +22,7 @@ $(function(){
 	$('#searchBox').keypress(function(e){
 		if(e.which==13){
 			addContent();
+			$("#dropDown").hide();
 		}
 	});
 });
