@@ -476,7 +476,7 @@ margin: 0px;
     margin: 0px;
     background-color: white;
     display:block;
-    z-index: -1;
+    z-index: 2;
     position: relative;
 }
 
