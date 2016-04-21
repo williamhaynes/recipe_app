@@ -371,10 +371,12 @@ input[type="search"]{
 	position: absolute;
 	top: 266px;
 	left: 780px;
+    z-index: 1;
 }
 #addPepper:hover{
 	background-image: url(static/Green.png);
 	cursor: crosshair;
+    z-index: 0;
 }
 /*Remove pepper - to remove ingredients to the list*/
 #removePepper{
@@ -385,11 +387,13 @@ input[type="search"]{
 	position: absolute;
 	top: 330px;
 	left: 652px;
+    z-index: 1;
 }
 
 #removePepper:hover{
 	background-image: url(static/Red.png);
 	cursor: crosshair;
+    z-index: 0;
 }
 /*Clear pepper - to clear the ingredients*/
 #clearPepper{
@@ -400,11 +404,13 @@ input[type="search"]{
 	position: absolute;
 	top: 414px;
 	left: 763px;
+    z-index: 1;
 }
 
 #clearPepper:hover{
 	background-image: url(static/Yellow.png);
 	cursor: crosshair;
+    z-index: 0;
 }
 /*Positioning of the help box*/
 #helpBox{
