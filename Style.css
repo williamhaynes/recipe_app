@@ -454,9 +454,10 @@ padding: 11px;
 margin: 0px;
 }
 
-/*#dropDown{
-    visibility: hidden;
-}*/
+#dropDown{
+    list-style-type: none;
+}
+
 /* Autocomplete js functions dropdown box controls */
 .dropDownli{
     text-decoration: none;
