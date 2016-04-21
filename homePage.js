@@ -18,6 +18,12 @@ $(function(){
 	$('#clearPepper').click(function(){
 		clearContent();
 	});
+
+	$('#searchBox').keypress(function(e){
+		if(e.which==13){
+			addContent();
+		}
+	});
 });
 
 function addContent () {
@@ -38,5 +44,5 @@ function removeContent(){
 }
 
 function clearContent(){
-	$("ul").empty();
+	$(".removalCaller").empty();
 }
