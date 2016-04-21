@@ -10,7 +10,7 @@
  */
 $(function(){
     var htmlstring = "";
-    $('#searchBox').keydown(function() {
+    $('#searchBox').keyup(function() {
         var grabbedText = $('#searchBox').val();
         autocompleteIngredients(grabbedText);
         /*htmlstring += "<li>"+grabbedText+"</li>";
@@ -26,7 +26,7 @@ function autocompleteIngredients(grabbedText){
     //call API
     //build url for request
 
-    $.ajax({
+    var ingredientsAutoCompleted = $.ajax({
         url: 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText, // The URL to the API. You can get this in the API page of the API you intend to consume
         type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
         data: {}, // Additional parameters here
@@ -38,7 +38,7 @@ function autocompleteIngredients(grabbedText){
         }
     });
 
-    autocompleteText(json);
+    autocompleteText(ingredientsAutoCompleted.data);
     /*
 
     var url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/ingredients/autocomplete?query=' + grabbedText + '/e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX/';
