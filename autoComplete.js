@@ -43,7 +43,7 @@ function autocompleteIngredients(grabbedText){
                 i++;
             }
             $("#dropDown").html(autoText);
-            $("#dropDown").css( "visibility = visible" )
+            $("#dropDown").css("visibility","visible");
 
         },
         error: function(err) { alert(err); },
