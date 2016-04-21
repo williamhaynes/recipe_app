@@ -11,7 +11,7 @@
 $(function(){
     var htmlstring = "";
     $('#searchBox').keydown(function() {
-        var grabbedText = ('#searchBox').val;
+        var grabbedText = ('#searchBox').text;
         htmlstring += "<li>"+grabbedText+"</li>";
         $("#dropDown").html(htmlstring);
     });
