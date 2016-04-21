@@ -22,7 +22,7 @@ $(function(){
 
 function addContent () {
 	var itemToAdd = $("#searchBox"); //Get contents of SearchBar
-	items_html = "<li>" + itemToAdd.val() + "</li>"; //Add Wrappers
+	items_html = "<li class='ingredientsList'>" + itemToAdd.val() + "</li>"; //Add Wrappers
 	if($("li").size()<12){
 		$('#iAdded ul').append(items_html) //Add li to existing ul
 	}
