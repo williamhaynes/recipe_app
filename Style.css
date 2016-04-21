@@ -460,6 +460,7 @@ margin: 0px;
     padding: 0px;
     width: 240px;
     height: 120px;
+    z-index:-1;
 }
 
 /* Autocomplete js functions dropdown box controls */
