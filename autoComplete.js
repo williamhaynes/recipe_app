@@ -9,7 +9,7 @@
  * It's purpose is to make it easier for users who can select from a list as they type.
  */
 $(function(){
-    $('#searchBox').onkeyup(function () {
+    $('#searchBox').addEventListener("keypress", function () {
         var searchterm = $("#searchBox");
         //call autocomplete function
         autocompleteIngredients(searchterm);
