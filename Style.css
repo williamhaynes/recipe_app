@@ -454,16 +454,19 @@ padding: 11px;
 margin: 0px;
 }
 
-/* Autocomplete js functions dropdown box controls */
 #dropDown{
+    visibility: hidden;
+}
+/* Autocomplete js functions dropdown box controls */
+.ingredientsList{
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10.5px 11px;
-    background-color: #005555;
+    background-color: white;
     display:block;
 }
 
-#dropDown:hover{
+.ingredientsList:hover{
     color: white;
-    background-color: #5FD367;
+    background-color: blue;
 }

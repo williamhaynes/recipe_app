@@ -42,7 +42,10 @@ function autocompleteIngredients(grabbedText){
                 counter++;
                 i++;
             }
-            $("#dropDown").html(autoText);},
+            $("#dropDown").html(autoText);
+            $("#dropDown").css( "visibility = visible" )
+
+        },
         error: function(err) { alert(err); },
         beforeSend: function(xhr) {
             xhr.setRequestHeader("X-Mashape-Authorization", "e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX"); // Enter here your Mashape key
