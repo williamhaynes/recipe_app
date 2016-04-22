@@ -12,11 +12,8 @@ $(function(){
     var htmlstring = "";
     $('#searchBox').keyup(function() {
         var grabbedText = $('#searchBox').val();
-        $('#dropDown').show();
         autocompleteIngredients(grabbedText);
-        /*htmlstring += "<li>"+grabbedText+"</li>";
-        $("#dropDown").html(htmlstring);*/
-        //comment
+
     });
 });
 

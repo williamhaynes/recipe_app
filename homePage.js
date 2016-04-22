@@ -25,10 +25,6 @@ $(function(){
 			$("#dropDown").hide();
 		}
 	});
-	$('#searchBox, .dropDownli').mouseout(function(){
-			$('#dropDown').hide();
-		}
-	)
 });
 
 function addContent () {
