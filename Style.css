@@ -478,6 +478,7 @@ margin: 0px;
     display:block;
     z-index: 2;
     position: relative;
+    height:20px;
 }
 
 .dropDownli:hover{

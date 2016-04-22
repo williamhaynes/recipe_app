@@ -15,6 +15,12 @@ $(function(){
         autocompleteIngredients(grabbedText);
 
     });
+    $("#dropDown").click(function(){
+        var selectedText = $(this).text();
+        $('#searchBox').val(selectedText);
+    });
+
+
 });
 
 /*
