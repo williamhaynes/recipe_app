@@ -16,7 +16,8 @@ $(function(){
 
     });
     $("#dropDown").click(function(){
-        var selectedText = $(this).text();
+        var selectedText = $(this).val();
+        alert(selectedText);
         $('#searchBox').val(selectedText);
     });
 
