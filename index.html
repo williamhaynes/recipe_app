@@ -21,11 +21,12 @@
 		<div id=choppingBoard>
 			<div id=searchBar>
 				<!--~~~~~~~~~ The search bar that you use to search ingredients ~~~~~~~~~-->
-				<input type="search" id=searchBox name="search" maxlength="20" placeholder="Type Ingredient Here"/>
-                <ol id="dropDown">
+				<input type="text" id=searchBox name="search" maxlength="20" placeholder="Type Ingredient Here" list="dropDown"/>
+
+				<datalist id="dropDown">
                     <!-- Blank but will contain text from autocomplete-->
 
-                </ol>
+                </datalist>
 			</div>
 			<div id=iAdded>
 				<h3 class=ingredientsHeaderText>My Ingredients</h3>
