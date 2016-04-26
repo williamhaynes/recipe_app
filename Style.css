@@ -73,11 +73,11 @@ ul {
     margin:0px;
 }
 /*The Recipe selection*/
-#RecipeSelection{
+.RecipeSelection{
     text-align: left;
     height: 144px;
     padding:0px;
-    margin-top:-13px;
+    margin-top:0px;
     outline: 3px solid black;
 }
 
@@ -199,7 +199,7 @@ h6{
 }
 
 .FoodRecipeSectionPage3{
-    margin-top: -14px;
+    margin-top: -24px;
     height: 144px;
     width: 323px;
 }
@@ -207,29 +207,32 @@ h6{
 .FoodRecipeSectionPage2{
     height: 144px;
     width:337px;
+    margin-top: 0px;
     padding-right: 0px;
 }
 /*Font size and positioning of ingredients*/
 .IngredientsMissing{
-    margin-top: -18px;
+    margin-top: 0px;
     font-size: 14px;
     text-align: center;
 }
 
 /*Recipe positioning and font*/
-.FoodRecipe{
-    position: relative;
-    margin-top: -10px;
-    padding-right: 10px;
-    font-size: 12px;
-    height: 90px;
-    display: flex;
-    text-align:center;
-    align-items: center; /* align vertical */
+.IngredientsUsed {
+    margin-top: -18px;
+    font-size: 14px;
+    text-align: center;
 }
 
-.FoodRecipe p .more{
-    color:#4d94ff; 
+.IngredientsUsed p .more{
+    color:#4d94ff;
+}
+
+.FoodLikes{
+    margin-top: -5px;
+    font-size: 16px;
+    text-align: center;
+    color:#4d94ff;
 }
 
 /*Cooking time positioning and font*/
@@ -237,7 +240,7 @@ h6{
     float:right;
     font-size: 12px;
     position: relative;
-    margin-top: -30px;
+    margin-top: -25px;
     margin-bottom:0px;
     margin-right: 7px;
     height:23px;
