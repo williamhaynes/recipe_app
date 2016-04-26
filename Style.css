@@ -307,7 +307,6 @@ h6{
     background-repeat: no-repeat;
     width: 1260px;
     height: 760px;
-    overflow: none;
     background-size: 1280px 760px;
 	}
 
@@ -354,7 +353,7 @@ input[type="search"]{
 
 /*Central Box containing left and right arrows*/
 #moveI{
-	width: 80px;scroll-snap-coordinate;
+	width: 80px;
 	height: 345px;
 	position: absolute;
 	top: 115px;
