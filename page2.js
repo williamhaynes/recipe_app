@@ -22,6 +22,7 @@ function fillText(ingredients){
 
             while(counter<1){ //limits list to first 10 results
                 var title = data[i].title+data[i].title;
+                alert(title);
                 autoText += "<h2>"+ title +"</h2>";
                 counter++;
                 i++;
