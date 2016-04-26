@@ -6,6 +6,11 @@ $(function(){
 	// 1. find the addcontent button in task-two.html
 	// 2. add an event listener for 'click' events
 	// 3. assign the addContent() function to the click event
+
+	if ($(window).width() < 960) {
+		alert('Recipe Rush is designed to work in full screen, \nPlease make Recipe Rush Fullscreen');
+	}
+
 	$('#addPepper').click(function () {
 		addContent();	
 

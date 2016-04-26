@@ -1,7 +1,7 @@
 /*Body containing backgroud colour and the font*/
 body {
     background-color: #595873;
-    font-family: 'Signika', sans-serif; 
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT";
 }
 
 /*The container holding the positioning of the website*/
@@ -19,8 +19,8 @@ body {
     background-repeat: no-repeat;
     width: 1260px;
     height: 760px;
-    overflow: none;
     background-size: 1280px 760px;
+
 }
 /*The Book image holding the different recipes found*/
 #Book{
@@ -307,7 +307,6 @@ h6{
     background-repeat: no-repeat;
     width: 1260px;
     height: 760px;
-    overflow: none;
     background-size: 1280px 760px;
 	}
 
@@ -320,7 +319,7 @@ h6{
 	width: 200px;
 	height: 115px;
 	position: absolute;
-	top: 215px;
+	top: 212px;
 	left: 675px;
 	/*background-color: yellow;*/
 	text-align: center;				/*Centres horizontally the find Ingredient Bar*/
@@ -341,7 +340,7 @@ input[type="search"]{
 
 /*LHS "Ingredients Added Box*/
 #iAdded{
-	font-family: 'Signika', sans-serif;
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT";
 	width: 300px;
 	height: 345px;
 	position: absolute;
@@ -349,7 +348,7 @@ input[type="search"]{
 	left: 339px;
 	background-color: hsla(0,100%, 100%, 0.5);
 	text-align: center;
-	font-size: 120%;
+	font-size: 125%;
 }
 
 /*Central Box containing left and right arrows*/
@@ -453,7 +452,7 @@ input[type="search"]{
 
 
 .findRecipeText{
-	padding-top: 15px;
+	padding-top: 20px;
 }
 h3{
 padding: 11px;
@@ -468,20 +467,14 @@ margin: 0px;
     position: relative;
 }
 
-/* Autocomplete js functions dropdown box controls */
-.dropDownli{
-    text-decoration: none;
-    color: black;
-    padding: 0px;
-    margin: 0px;
-    background-color: white;
-    display:block;
-    z-index: 2;
-    position: relative;
-    height:20px;
-}
+#searchBox{
+    height: 30px;
+    width: 226px;
+    font-size: 20px;
+    text-align: center;
 
-.dropDownli:hover{
-    color: white;
-    background-color: blue;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+
 }
