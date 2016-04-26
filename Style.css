@@ -19,8 +19,8 @@ body {
     background-repeat: no-repeat;
     width: 1260px;
     height: 760px;
-    overflow: none;
     background-size: 1280px 760px;
+
 }
 /*The Book image holding the different recipes found*/
 #Book{
