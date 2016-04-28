@@ -70,7 +70,7 @@ body {
 }
 
 #FoodTitleFinal{
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
 }
@@ -86,14 +86,21 @@ body {
 
 #IngredientsFinal{
     padding-left: 10px;
-    margin-top: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 80px;
-    overflow: auto;
 }
 
-#IngredientsFinal h3{
+
+#FoodInstructionsFinal{
+    height: 370px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#LeftPage3Middle h3{
+    margin-top: 5px;
     padding: 0px;
-    margin: 0px;
 }
 
 #LeftPage3Lower h3 {
@@ -107,16 +114,11 @@ body {
 }
 
 #FoodPrepFinal{
-    height: 160px;
+    height: 140px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-#FoodInstructionsFinal{
-    height: 370px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
 
 /*Unordered List*/
 ul {
