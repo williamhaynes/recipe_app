@@ -16,9 +16,13 @@ function fillText(recipeID){
         success: function (data2) {console.dir((data2.source));
             alert("Inner loop");
             alert(data2.readyInMinutes);
-            $("#FoodCookingTimeFinal").html("<p>"+data2.readyInMinutes+'mins'+"</p>");
             $("#FoodPicFinal").html("<img src="+ data2.image +" alt='Recipe1 Image'>");
-
+            $("#FoodTitleFinal").html("<p>"+data2.title+"</p>");
+            $("#FoodCookingTimeFinal").html("<p>"+data2.readyInMinutes+'mins'+"</p>");
+            for(var i=0; i<data2.extendedIngredients.length; i++)
+            {
+                $("#IngredientsFinal").append("<li>" +data2.extendedIngredients[i].name+"  "+data2.extendedIngredients[i].amount+data2.extendedIngredients[i].unitShort+"</li>");
+            }
 
             //SCOTT BITTY
             var ExtractRecipeFromWebsite = $.ajax({
@@ -29,8 +33,8 @@ function fillText(recipeID){
                 success: function (data3) {console.dir((data3.source));
                     alert("Inner Inner loop");
                     var wholestring = data3.instructions;
-                    var trimmedString = wholestring.substring(0, 100);
-                    $("#FoodRecipeFinal").html("<p>" + trimmedString +"      "+ "<span class='more'>[more...]</span>"+"</p>");
+                    var trimmedString = wholestring.substring(0, 100000);
+                    $("#FoodInstructionsFinal").html("<p>" + trimmedString+"</p>");
 
                 },
                 error: function(err) { alert(err); },
