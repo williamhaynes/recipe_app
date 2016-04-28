@@ -1,6 +1,6 @@
 $(function(){
     $( document ).ready(function(){
-        var ingredients = 'apple';
+        var ingredients = 'cheese%2Ctomato';
         //alert(ingredients);
         fillText(ingredients);
     });
@@ -117,7 +117,7 @@ function fillText(ingredients){
 
             //---------------------------------------NUMBER 4--------------------------------------------------------------
             $("#FoodTitle4").html("<h2>"+ data[3].title +"</h2>");
-            $("#IngredientsMissing").html("<p>"+ data[3].missedIngredientCount +' Ingredients Missing'+" </p>");
+            $("#IngredientsMissing4").html("<p>"+ data[3].missedIngredientCount +' Ingredients Missing'+" </p>");
             $("#IngredientsUsed4").html("<p>"+data[3].usedIngredientCount+' Ingredients Used'+"</p>");
             $("#FoodLikes4").html("<p>"+data[3].likes+' likes!'+"</p>");
 

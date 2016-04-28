@@ -1,7 +1,7 @@
 $(function(){
     $( document ).ready(function(){
-        var recipeID = '622622';
-        alert(recipeID);
+        var recipeID = '271873';
+        //alert(recipeID);
         fillText(recipeID);
     });
 });
@@ -14,15 +14,17 @@ function fillText(recipeID){
         data: {}, // Additional parameters here
         dataType: 'json',
         success: function (data2) {console.dir((data2.source));
-            alert("Inner loop");
-            alert(data2.readyInMinutes);
+            //alert("Inner loop");
+            //alert(data2.readyInMinutes);
             $("#FoodPicFinal").html("<img src="+ data2.image +" alt='Recipe1 Image'>");
             $("#FoodTitleFinal").html("<p>"+data2.title+"</p>");
-            $("#FoodCookingTimeFinal").html("<p>"+data2.readyInMinutes+'mins'+"</p>");
+            $("#FoodCookingTimeFinal").html("<p> Total cooking time: "+data2.readyInMinutes+'mins'+"</p>");
+            $("#IngredientsFinal").append("<p>");
             for(var i=0; i<data2.extendedIngredients.length; i++)
             {
-                $("#IngredientsFinal").append("<li>" +data2.extendedIngredients[i].name+"  "+data2.extendedIngredients[i].amount+data2.extendedIngredients[i].unitShort+"</li>");
+                $("#IngredientsFinal").append(data2.extendedIngredients[i].name+"  "+data2.extendedIngredients[i].amount+data2.extendedIngredients[i].unitShort+",  ");
             }
+            $("#IngredientsFinal").append("</p>");
 
             //SCOTT BITTY
             var ExtractRecipeFromWebsite = $.ajax({
@@ -31,10 +33,9 @@ function fillText(recipeID){
                 data: {}, // Additional parameters here
                 dataType: 'json',
                 success: function (data3) {console.dir((data3.source));
-                    alert("Inner Inner loop");
-                    var wholestring = data3.instructions;
-                    var trimmedString = wholestring.substring(0, 100000);
-                    $("#FoodInstructionsFinal").html("<p>" + trimmedString+"</p>");
+                    //alert("Inner Inner loop");
+                    $("#FoodInstructionsFinal").append(data3.instructions);
+                    $("#FoodPrepFinal").append(data3.text);
 
                 },
                 error: function(err) { alert(err); },

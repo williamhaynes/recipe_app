@@ -54,20 +54,70 @@ body {
 }
 /*The left page of the book*/
 #LeftPage3{
-    width:318px;
-    padding-right:0px;
-    float: left;
-    margin:10px;
+    position:absolute;
+    top: -2px;
+    left: 1px;
+    width: 336px;
+    height: 440px;
 }
 /*The right page of the book*/
 #RightPage3{
-    padding-top: 0px;
-    width:325px;
-    height:407px;
-    float: left;
-    margin: 18px 0px 0px 14px;
-    outline: 1px solid black;
+    position: absolute;
+    top: 3px;
+    left: 343px;
+    width:340px;
+    height: 415px;
 }
+
+#FoodTitleFinal{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#FoodTitleFinal{
+    padding: 1px;
+}
+
+
+#LeftPage3Upper{
+    height: 140px;
+}
+
+#IngredientsFinal{
+    padding-left: 10px;
+    margin-top: 5px;
+    height: 80px;
+    overflow: auto;
+}
+
+#IngredientsFinal h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+#LeftPage3Lower h3 {
+    margin-left: -12px;
+}
+
+#LeftPage3Lower{
+    padding-left: 10px;
+    height: 210px;
+
+}
+
+#FoodPrepFinal{
+    height: 160px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#FoodInstructionsFinal{
+    height: 370px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 /*Unordered List*/
 ul {
     list-style-type: none;
@@ -91,11 +141,6 @@ li a:hover {
 }
 
 
-
-#headline{
-    width:315px;
-    text-align: left;
-}
 /*The list of ingredients already owned*/
 #IngredientsAlready{
     height: 144px;
@@ -156,10 +201,7 @@ li a:hover {
 }
 /*Cooking info*/
 #cookinfo{
-	text-align:center;
-    height: 230px;
-    padding-top: 10px;
-    float:left;
+    margin-top: 0px;
 }
 /*Image of the food used as example*/
 .FoodPic img{
