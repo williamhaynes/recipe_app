@@ -25,32 +25,32 @@ body {
 /*The Book image holding the different recipes found*/
 #Book{
     /*New Book Margin*/
-    width: 684px;
-    margin: 167px 0px 0px 291px;
+    height: 440px;
+    width: 686px;
+    position: absolute;
+    top: 167px;
+    left: 290px;
 
 }
 /*The left page of the book*/
 #LeftPage2{
-    width:340px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right:0px;
-    padding-right:0px;
-    /*float: left;*/
-    /*margin-left: 23vw;
-    margin-top: 12vw;*/
+    position:absolute;
+    top: -4px;
+    left: -1px;
+    width: 340px;
+    height: 440px;
+    padding: 0px;
+    margin: 0px;
+    border-right: 5px black solid;
+
 }
 /*The right page of the book*/
 #RightPage2{
     position: absolute;
-    top: 153px;
-    left: 633px;
-    width:343px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    /*float: left;*/
-    /*margin-left: 2vw;
-    margin-top: 12vw;*/
+    top: -4px;
+    left: 343px;
+    width:340px;
+    height: 440px;
 }
 /*The left page of the book*/
 #LeftPage3{
@@ -75,15 +75,7 @@ ul {
     height: 436px;
     margin:0px;
 }
-/*The Recipe selection*/
-.RecipeSelection{
-    position: relative;
-    text-align: left;
-    height: 144px;
-    padding:0px;
-    margin-top:0px;
-    outline: 3px solid black;
-}
+
 
 /*Ordered List*/
 li a {
@@ -171,24 +163,23 @@ li a:hover {
 }
 /*Image of the food used as example*/
 .FoodPic img{
-    margin-top: 0px;
+    margin-top: 2px;
     float:left;
     width: 140px;
-    height: 145px;
+    height: 140px;
     margin-right: 10px;
 }
 /*Title of recipe food*/
 .FoodTitle {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 0px;
     font-size: 12px;
     text-align: left;
 }
 
-.clr{
+/*.clr{
     clear:both;
     font-size:0;
-}
+}*/
 /*Image of back button*/
 #BackPageButtons img{
     padding: 0px;
@@ -296,6 +287,17 @@ h6{
 	width: 180px;
 }
 
+/*Makes logo selectable as a block, fixes slight issues of size*/
+#headerBar a{
+    display: block;
+}
+
+#foodRecipeSectionPage2 a{
+    position: relative;
+    display: block;
+    height: 140px;
+
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Home Page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* Author: William Haynes*/
@@ -486,7 +488,7 @@ margin: 0px;
 
 }
 
-
+/*Page two modifications by William Haynes 28/04/16*/
 
 /*Positioning of the help box for page 2*/
 #helpBoxPage2{
@@ -498,9 +500,77 @@ margin: 0px;
     text-align: center;
     background-color: hsla(0,100%, 100%, 0.5);
     border-style: solid;
-    border-color: #6666ff;
+    border-color:  #6666ff;
     border-width: 8px;
     border-radius: 15px;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
 }
+
+/*Left Page*/
+#leftTopRecipe{
+    position: absolute;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid black;
+}
+
+#leftMiddleRecipe{
+    position: absolute;
+    top: 148px;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid black;
+}
+#leftBottomRecipe{
+    position: absolute;
+    top: 296px;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid black;
+}
+
+
+/*Right Page
+/*Left Page*/
+#rightTopRecipe{
+    position: absolute;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid black;
+}
+
+#rightMiddleRecipe{
+    position: absolute;
+    top: 148px;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid black;
+}
+#rightBottomRecipe{
+    position: absolute;
+    top: 296px;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid black;
+}
+
+.FoodRecipeSectionPage2:hover{
+    background: gainsboro;
+}
+
+/*Fixes cooking time to bottom right corner of the recipe*/
+.FoodCookingTime{
+    position: absolute;
+    bottom: 4px;
+    right: 2px;
+}
+
+#Book a{
+    display: inline-block;
+    height: 145px;
+    width: 340px;
+}
+
