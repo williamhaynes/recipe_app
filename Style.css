@@ -86,7 +86,7 @@ body {
 
 #IngredientsFinal{
     padding-left: 10px;
-    overflow-y: auto;
+    overflow: scroll;
     overflow-x: hidden;
     height: 80px;
 }
@@ -365,10 +365,10 @@ h6{
     height: 760px;
     background-size: 1280px 760px;
 	}
-
+/*
 	::-webkit-scrollbar { 
     display: none; 
-	}
+	}*/
 	
 /*Top Bar, includes Search Textbox and a Search Button*/
 #searchBar{
