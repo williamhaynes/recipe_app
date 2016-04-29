@@ -52,3 +52,15 @@ function removeContent(){
 function clearContent(){
 	$(".removalCaller").empty();
 }
+
+function fillURL(){
+	var list = document.getElementsByClassName('ingredientsList');
+	var a="";
+	for(var i=0;i<list.length;i++){
+		a+=list[i].innerText+",";
+	}
+	alert(a);
+	var b = a,
+		url = 'http://reciperush.azurewebsites.net/page2.html?ingredients=' + encodeURIComponent(b);
+	document.location.href = url;
+}

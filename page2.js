@@ -1,6 +1,16 @@
 $(function(){
     $( document ).ready(function(){
-        var ingredients = 'cheese%2Ctomato';
+        var url = document.location.href,
+            params = url.split('?')[1].split('%2C'),
+            data = {}, tmp;
+        for(var i = 0,l = params.length;i < l;i++){}{
+            tmp = params[i].split('=');
+            data[tmp[0]] = tmp [1];
+        }
+
+
+
+        var ingredients = data.ingredients;
         //alert(ingredients);
         fillText(ingredients);
     });
@@ -32,29 +42,6 @@ function fillText(ingredients){
                     //alert(data2.readyInMinutes);
                     $("#FoodCookingTime1").html("<p>"+data2.readyInMinutes+'mins'+"</p>");
                     $("#FoodPic1").html("<img src="+ data2.image +" alt='Recipe1 Image'>");
-
-
-                    //SCOTT BITTY
-                    //var ExtractRecipeFromWebsite = $.ajax({
-                        //url: 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/extract?forceExtraction=false&url=http%3A%2F%2Fsarahscucinabella.com%2F2010%2F10%2F06%2Fbrown-butter-apple-crumble%2F',
-                        //type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
-                        //data: {}, // Additional parameters here
-                        //dataType: 'json',
-                        //success: function (data3) {console.dir((data3.source));
-                            //alert("Inner Inner loop");
-                            //var wholestring = data3.instructions;
-                            //var trimmedString = wholestring.substring(0, 100);
-                            //$("#FoodRecipe1").html("<p>" + trimmedString +"      "+ "<span class='more'>[more...]</span>"+"</p>");
-
-                        //},
-                        //error: function(err) { alert(err); },
-                        //beforeSend: function(xhr) {
-                            //xhr.setRequestHeader("X-Mashape-Authorization", "e3bX6hAPJ4mshViuB0lABloX6jbWp1jr09AjsnW6Ut24xxUcOX"); // Enter here your Mashape key
-
-                        //}
-                    //});
-
-
                 },
                 error: function(err) { alert(err); },
                 beforeSend: function(xhr) {
