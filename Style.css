@@ -621,3 +621,7 @@ margin: 0px;
     width: 340px;
 }
 
+div.FoodId{
+    display: none;
+    visibility: hidden;
+}
